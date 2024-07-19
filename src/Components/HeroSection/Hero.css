@@ -1,0 +1,63 @@
+/* Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("../../Assets/hero.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; 
+  
+}
+
+.hero-text {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5rem; 
+  font-weight: 900; 
+  margin-bottom: 1.5rem; 
+  line-height: 1.2;
+}
+
+.hero p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6; 
+  margin-bottom: 2rem; 
+}
+
+/* Button styling */
+.btn { 
+  background-color: transparent; 
+  color: white; 
+  padding: 0.8rem 1.2rem; /* Reduced padding */
+  border: 2px solid white; 
+  border-radius: 5px;
+  font-weight: 600; 
+  cursor: pointer;
+  display: inline-flex; 
+  align-items: center; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  text-decoration: none; 
+}
+
+.btn:hover { 
+  background-color: white; 
+  color: #007bff; 
+}
+
+.btn img {
+  margin-left: 10px; 
+  width: 18px; /* Adjusted arrow size */
+  height: 18px; 
+}

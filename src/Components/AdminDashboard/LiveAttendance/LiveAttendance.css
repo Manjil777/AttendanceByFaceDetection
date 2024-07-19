@@ -1,0 +1,145 @@
+.live-attendance {
+  margin-left: 240px; /* Adjust based on sidebar width */
+  margin-top: 100px;
+}
+
+.live-attendance__container {
+  display: flex;
+  gap: 20px;
+}
+
+.live-video-section,
+.detected-students {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 48%; 
+}
+
+.live-video-section h3,
+.detected-students h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.video-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.selected-item {
+  background-color: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.selected-item span {
+  margin-right: 8px;
+}
+
+.selected-item button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.video-container {
+  width: 100%;
+  height: 300px; 
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.detected-students table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.detected-students th,
+.detected-students td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #eee; 
+}
+
+.user-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.pagination button {
+  background-color: #2b60ec;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex; 
+  align-items: center; 
+}
+
+.pagination button .icon { 
+  margin-right: 5px; 
+}
+
+.pagination button:disabled {
+  opacity: 0.5; 
+  cursor: not-allowed;
+}
+
+/* Styles for student summary */
+.student-summary {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  text-align: center; 
+}
+
+.summary-item h4 {
+  margin: 0 0 5px 0;
+  color: #666;
+}
+
+.summary-item p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+/* Style for student ID cell to prevent overflow */
+.student-id {
+  word-break: break-all; /* Break long words */
+  max-width: 150px; /* Adjust as needed */
+}

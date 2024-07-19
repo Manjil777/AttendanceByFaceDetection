@@ -1,0 +1,7 @@
+.admin-dashboard {
+  display: flex;
+}
+
+.main-content {
+  flex: 1; /* Allows the main content to take up available space */
+}

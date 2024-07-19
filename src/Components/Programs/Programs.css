@@ -1,0 +1,51 @@
+.programs {
+  margin: 80px auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.program {
+  flex-basis: 31%; 
+  position: relative; /* To position the caption */
+  overflow: hidden; /* Hide caption overflow */
+}
+
+.program img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease; /* Add transition for transform */
+}
+
+.program:hover img {
+  transform: scale(1.1); /* Scale up image on hover */
+}
+
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 15, 152, 0.7); /* Darker background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  opacity: 0; /* Hide caption by default */
+  transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.program:hover .caption {
+  opacity: 1; /* Show caption on hover */
+  
+}
+
+.caption p {
+  font-size: 1.2rem; /* Adjust caption text size */
+  margin-top: 10px;
+}

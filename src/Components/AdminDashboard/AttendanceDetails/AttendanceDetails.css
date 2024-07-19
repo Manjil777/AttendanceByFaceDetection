@@ -1,0 +1,158 @@
+.attendance-details-container {
+  margin-left: 240px; 
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.back-button {
+  margin-bottom: 20px; 
+}
+
+.back-button a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2b60ec; 
+  padding: 8px 12px; 
+  border: 1px solid #2b60ec; 
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.back-button a:hover {
+  background-color: #2b60ec; 
+  color: white; 
+}
+
+.attendance-details__container {
+  display: flex;
+  gap: 20px; 
+}
+
+.class-details,
+.student-attendance {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.class-details {
+  width: 30%; 
+}
+
+.student-attendance {
+  flex: 1; 
+}
+
+.class-details h3,
+.student-attendance h3 {
+  color: #333; 
+  margin-bottom: 15px;
+}
+
+.class-details p {
+  margin-bottom: 8px; 
+}
+
+.attendance-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; 
+}
+
+.filter-attendance {
+  display: flex;
+  gap: 10px; 
+}
+
+.filter-btn {
+  background-color: #f2f2f2;
+  color: #333; 
+  border: none;
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #2b60ec; 
+  color: white; 
+}
+
+/* Removed .show-entries styles */
+
+.download-csv {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.student-attendance table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+
+.student-attendance th,
+.student-attendance td {
+  text-align: left;
+  padding: 8px; 
+  border-bottom: 1px solid #eee; 
+}
+
+.student-attendance th {
+  font-weight: 600; 
+}
+
+.user-image {
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px; 
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.pagination p {
+  margin: 0; 
+}
+
+.pagination button {
+  background-color: #e9ecef;
+  color: #333; 
+  border: none;
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  cursor: pointer;
+  margin-left: 10px; 
+  display: flex; 
+  align-items: center; 
+}
+
+.pagination button:hover {
+  background-color: #ddd; 
+}
+
+.pagination button .icon {
+  margin-right: 5px; 
+}
+
+.pagination button:disabled {
+  opacity: 0.5; 
+  cursor: not-allowed;
+}
+
+.student-id {
+  word-break: break-all; 
+  max-width: 150px; 
+}

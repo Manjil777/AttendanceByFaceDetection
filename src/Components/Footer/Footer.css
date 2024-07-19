@@ -1,0 +1,30 @@
+.footer {
+  margin: 80px auto 20px; /* Adjusted margins */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd; /* Lighter border color */
+  padding: 20px 80px; /* Added padding */
+  max-width: 90%; /* Contained width */
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-left: 30px; /* Adjusted spacing */
+}
+
+.footer ul li a { /* Style for links */
+  text-decoration: none;
+  color: #676767; 
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #000F38; /* Darker color on hover */
+}

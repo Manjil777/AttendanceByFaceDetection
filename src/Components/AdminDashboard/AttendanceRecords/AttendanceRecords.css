@@ -1,0 +1,178 @@
+/* Attendance.css */
+.attendance-container {
+  margin-left: 240px; 
+  margin-top: 100px; 
+  padding: 20px;
+}
+
+.attendance-controls {
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 20px; 
+}
+
+.filter-class, .filter-subject, .academic-date {
+  display: flex; 
+  align-items: center; 
+}
+
+.filter-class label, 
+.filter-subject label,
+.academic-date label {
+  margin-right: 10px; 
+}
+
+.filter-class select, 
+.filter-subject select, 
+.academic-date input {
+  padding: 8px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: #2b60ec; 
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px; 
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+/* Attendance Tables Section */
+.attendance-tables {
+  display: flex;
+  gap: 20px; 
+}
+
+.todays-attendance,
+.other-sections { /* Common styles for both sections */
+  background-color: white;
+  border-radius: 10px; 
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.todays-attendance {
+  flex: 1; 
+}
+
+.other-sections {
+  width: 35%; 
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+
+.todays-attendance h3, 
+.todays-classes h3, 
+.add-subject h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Table Styling */
+.todays-attendance table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+}
+
+.todays-attendance th, 
+.todays-attendance td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #eee; 
+}
+
+.todays-attendance th {
+  font-weight: 600; 
+}
+
+.details-button {
+  background-color: #2b60ec;
+  color: white;
+  border: none;
+  padding: 6px 10px; 
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.pagination button {
+  background-color: #2b60ec; 
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px; 
+  cursor: pointer;
+  margin-left: 10px; 
+  display: flex;
+  align-items: center; 
+}
+
+.pagination button .icon { 
+  margin-right: 5px; 
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.add-subject form {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.add-subject .form-group {
+  display: flex;
+  flex-direction: column; 
+}
+
+.add-subject label {
+  margin-bottom: 5px; 
+}
+
+.add-subject input,
+.add-subject select {
+  padding: 8px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+.add-subject .form-buttons {
+  display: flex; 
+  justify-content: flex-end; 
+  gap: 10px; 
+  margin-top: 15px; 
+}
+
+.add-subject button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-subject button[type="submit"] { /* Submit button */
+  background-color: #2b60ec; 
+  color: white;
+  border: none;
+}
+
+.add-subject button[type="button"] { /* Cancel button */
+  background-color: #e9ecef; /* Light gray */
+  color: #333;
+  border: 1px solid #ccc;
+}

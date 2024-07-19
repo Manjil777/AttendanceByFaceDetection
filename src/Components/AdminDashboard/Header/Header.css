@@ -1,0 +1,39 @@
+.header {
+  background-color: #f8f9fa; /* Light background */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  width: 100%;
+  border-radius: 10px;
+  max-width: 80vw;
+  align-items: center;
+  border-bottom: 1px solid #eee; /* Subtle bottom border */
+  margin-left: 80px; /* Adjust margin-left based on your sidebar width */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.header-left h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  padding-left: 30px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.iconx {
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.notification-icon {
+  margin-right: 20px; 
+}
