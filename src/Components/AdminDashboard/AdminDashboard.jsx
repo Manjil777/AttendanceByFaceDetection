@@ -9,7 +9,7 @@ const AdminDashboard = () => {
     <div className="admin-dashboard">
       <Sidebar />
       <div className="main-content">
-        <Header />
+        <Header head='Admin'/>
         <Outlet /> 
       </div>
     </div>

@@ -1,0 +1,47 @@
+.scheduling-container {
+  margin-left: 240px; /* Adjust based on your sidebar width */
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.scheduling-container h2 {
+  color: #333; 
+  margin-bottom: 20px; 
+}
+
+.scheduling-container table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.scheduling-container th, 
+.scheduling-container td {
+  text-align: left; 
+  padding: 8px;
+  border-bottom: 1px solid #eee; 
+}
+
+.scheduling-container th {
+  font-weight: 600; 
+  background-color: #f8f9fa; 
+}
+
+.scheduling-container input[type="time"] {
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+}
+
+.scheduling-container button {
+  background-color: #2b60ec;
+  color: white;
+  border: none;
+  padding: 6px 10px; 
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px; 
+}
+
+.scheduling-container button:last-child {
+  margin-right: 0;
+}

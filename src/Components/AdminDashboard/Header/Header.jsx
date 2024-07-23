@@ -2,11 +2,11 @@ import React from 'react';
 import './Header.css';
 import { FaBell, FaUserCircle } from 'react-icons/fa'; // Import icons
 
-const Header = () => {
+const Header = ({head}) => {
   return (
     <header className="header">
       <div className="header-left">
-        <h2>Admin</h2>
+        <h2>{head}</h2>
       </div>
       <div className="header-right">
         <FaBell className="iconx notification-icon" />

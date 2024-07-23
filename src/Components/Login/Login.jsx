@@ -102,9 +102,11 @@ const Login = ({ onLogin }) => {
 
     // Simulated authentication
     if (username === 'admin' && password === '123') {
-      onLogin(); 
-      // Redirect AFTER state update
-      navigate('/admin'); // Use navigate for redirection
+      onLogin('admin');
+      navigate('/admin');
+    } else if (username === 'teacher' && password === '123') {
+      onLogin('teacher');
+      navigate('/teacher');
     } else {
       alert('Invalid credentials');
     }

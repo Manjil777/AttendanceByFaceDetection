@@ -1,0 +1,71 @@
+.sidebar {
+  background-color: #2b60ec;
+  color: white;
+  width: 80px; /* Adjust width as needed */
+  min-height: 95vh;
+  padding: 30px 20px;
+  position: fixed;
+  top: 20px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute items vertically */
+  align-items: center; /* Center items horizontally */
+  border-radius: 18px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  cursor: pointer; /* Spacing below logo */
+}
+
+.nav-list {
+  list-style: none;
+  position: relative;
+  left: -16px;
+  flex-direction: column;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icon horizontally */
+  padding: 15px;
+  margin-bottom: 60px;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #4f58c5;
+}
+
+.nav-link.active {
+  background-color: #4f58c5;
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icon horizontally */
+}
+
+.logout-btn:hover {
+  background-color: #4f58c5; 
+}
